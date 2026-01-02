@@ -1,0 +1,16 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# AWS / Secrets
+.env
+*.pem
+
+# OS
+.DS_Store

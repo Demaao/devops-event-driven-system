@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kafka-consumer
+  namespace: kafka
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kafka-consumer
+  template:
+    metadata:
+      labels:
+        app: kafka-consumer
+    spec:
+      containers:
+        - name: consumer
+          image: dema0/kafka-consumer:latest
+          env:
+            - name: KAFKA_BROKER
+              value: kafka:9092
+            - name: ELASTIC_URL
+              value: http://elasticsearch:9200
