@@ -1,4 +1,5 @@
 # Event‑Driven DevOps Project (AWS, Kubernetes, Kafka, Elasticsearch)
+By : Dema Omar 
 
 ## Overview
 
@@ -218,3 +219,4 @@ Kibana dashboards allow:
 * CI/CD and container registries are excluded by design
 
 ---
+
